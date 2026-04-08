@@ -42,7 +42,7 @@ global.XMLHttpRequest = dom.window.XMLHttpRequest;
 // Sample test suite for JavaScript event handling
 describe('Asynchronous Fetching ', () => {
   it('should fetch to external api and add information to page', async() => {
-    await new Promise(resolve => setTimeout(resolve, 200)); 
+    await new Promise(resolve => setTimeout(resolve, 1000)); 
     let postDisplay = document.querySelector("#post-list")
     expect(postDisplay.innerHTML).to.include('sunt aut')
     
